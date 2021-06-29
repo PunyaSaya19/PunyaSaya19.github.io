@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  font-family: Nunito, Sans-Serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+body{
+  overflow-x: hidden;
+}
+.bg-purple{
+  background: #7f3ee1;
+}
+.my-shadow{
+  box-shadow: 1px 1px 10px rgba(0,0,0,.3), -1px -1px 5px rgba(0,0,0,.3);
+}
+.jdl{
+  font-weight: bold;
+  position: relative;
+}
+.jdl-left::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  height: 5px;
+  background: #7f3ee1;
+  border-radius: 2px;
+  left: 0;
+}
+.jdl-center::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 75%;
+  height: 5px;
+  background: #7f3ee1;
+  border-radius: 2px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#navbar{
+  background: rgba(0,0,0,.7)!important;
+}
+#profile{
+  width: 100vw;
+  height: 500px;
+  background: url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.profile-center{
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  color: #fff;
+}
+img.img-profile{
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
+  border: 5px solid #fff;
+}
+h2.name-profile{
+  font-size: 50px;
+  text-shadow: 0 0 3px rgba(0,0,0,.8);
+}
+h5.job-profile{
+  font-size: 20px;
+  text-shadow: 0 0 3px rgba(0,0,0,.8);
+}
+.sosmed{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  
+}
+a.icon-sosmed{
+  background: #888888;
+  margin: 0 5px;
+  padding: 1px!important;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 0 1px #777777;
+}
+a.icon-sosmed i{
+  font-size: 30px;
+  color: #fff;
+}
+table.tbl-about tr td:nth-child(1){
+  width: 45%;
+  padding: 5px;
+}
+table.tbl-about tr td:nth-child(2){
+  width: 55%;
+  padding: 5px;
+}
+.info-prgs p{
+  color: #7f3ee1;
+}
+.img-container-portfolio{
+  position: relative;
+}
+
+img.img-portfolio{
+  height: 180px!important;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.2);
+  position: relative;
+}
+
+.info-img-portfolio{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,.5);
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  /*animation: 1s muncul forwards;*/
+}
+.jdl-info-img-portfolio{
+  font-size: 25px;
+}
+
+h3.jdl-education{
+  font-size: 30px;
+  font-weight: bold;
+}
+h5.nama-sekolah{
+  font-weight: bold;
+  font-size: 25px;
+}
+input{
+  border: 1px solid #888;
+  border-radius: 20px;
+  padding: 10px 20px;
+  outline: none;
+  width: 100%;
+}
+input::placeholder{
+  color: #999
+}
+textarea{
+  width: 100%;
+  height: 80px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  outline: none;
+  padding: 10px 15px;
+}
+.info-contact{
+  font-size: 25px;
+}
+.wadah-info-contact{
+  position: relative;
+}
+.wadah-info-contact::before{
+  content: "";
+  background: #7f3ee1;
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+#footer{
+  background: #555;
+  color: #fff;
+  width: 100%;
+  padding: 8px 0 1px 0;
+}
+/* mobile */
+@media (max-width : 750px){
+  #about, #skills, #education, #contact{
+    width: 95%;
+  }
+  img.img-portfolio{
+    height: 200px!important;
+  }
+  .jenis-sekolah{
+    padding: 15px 15px 5px 15px!important;
+    margin-bottom: 10px!important;
+  }
+  button.btn-submit{
+    width: 100%!important;
+  }
+  .wadah-info-contact::before{
+    display: none;
+  }
+}
+
+@keyframes muncul{
+  0%{
+    width: 0%;
+    height:  0%;
+    opacity: 0;
+  }
+  100%{
+    width: 80%;
+    height: 90%;
+    opacity: 1;
+    
+  }
+}
+@keyframes sembunyi{
+  0%{
+    width: 80%;
+    height: 90%;
+    opacity: 1;
+    
+  }
+  100%{
+    width: 0%;
+    height:  0%;
+    opacity: 0;
+  } 
+}
