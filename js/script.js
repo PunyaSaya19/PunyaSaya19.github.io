@@ -11,7 +11,7 @@ portfolio.style.paddingTop = (navbar.clientHeight + 10) + "px";
 education.style.paddingTop = (navbar.clientHeight + 10) + "px";
 contact.style.paddingTop = (navbar.clientHeight + 10) + "px";
 
-const img_portfolio = document.querySelectorAll(".img-portfolio");
+const img_portfolio = document.querySelectorAll(".img-container-portfolio");
 const info_img_portfolio = document.querySelectorAll(".info-img-portfolio");
     
 img_portfolio.forEach(function(e, i){
