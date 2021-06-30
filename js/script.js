@@ -15,7 +15,7 @@ const img_portfolio = document.querySelectorAll(".img-portfolio");
 const info_img_portfolio = document.querySelectorAll(".info-img-portfolio");
     
 img_portfolio.forEach(function(e, i){
-  e.addEventListener("mouseover", function(el){
+  e.addEventListener("mouseenter", function(el){
     info_img_portfolio[i].style.animation = "1s muncul forwards"
   });
   e.addEventListener("mouseout", function(el){
