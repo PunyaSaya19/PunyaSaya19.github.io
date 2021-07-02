@@ -53,14 +53,14 @@ body{
 }
 .profile-center{
   position: absolute;
-  top: 150px;
+  top: 70px;
   left: 50%;
   transform: translate(-50%, 0);
   color: #fff;
 }
 img.img-profile{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   box-shadow: 2px 2px 2px rgba(0,0,0,.4);
   border: 5px solid #fff;
 }
@@ -181,6 +181,9 @@ textarea{
 @media (max-width : 750px){
   #about, #skills, #education, #contact{
     width: 95%;
+  }
+  .profile-center{
+    top: 100px;
   }
    img.img-profile{
     width: 180px;
