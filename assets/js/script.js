@@ -16,8 +16,8 @@ const myText = new AutoTyping({
 
 // action 
 window.addEventListener("DOMContentLoaded", () => {
-  
-  if((window.innerHeight > 768) && (window.innerWidth > 768)) {
+
+  if ((window.innerHeight > 810) && (window.innerWidth > 768)) {
     document.documentElement.style.setProperty('--section-min-height', '600px');
   }
 })
@@ -30,11 +30,11 @@ window.onscroll = () => {
   }
 }
 
-btnToggle.addEventListener("click" , (e) => {
+btnToggle.addEventListener("click", (e) => {
   myMenu.classList.add("menu-active");
 })
 
-btnToggleClose.addEventListener("click" , (e) => {
+btnToggleClose.addEventListener("click", (e) => {
   myMenu.classList.remove("menu-active");
 })
 
