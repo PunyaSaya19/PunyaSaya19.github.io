@@ -14,65 +14,50 @@
 <body>
   
   <!-- navbar -->
-  <nav id="my-nav" class="fixed-top">
-    <div class="container d-flex justify-content-between align-items-center p-2">
-      <div class="my-nav-brand">
-        <h2>
-          <a href="#">
-            <span>My</span>-Portofolio
-          </a>
-        </h2>
+  <nav class="my_nav fixed-top" id="my_nav">
+    <div class="container d-flex justify-content-between align-items-center">
+      
+      <div class="my_nav_logo">
+        <a href="#">
+          My-<span>Portofolio</span>
+        </a>
       </div>
-      <div class="my-nav-menu">
-        <ul id="my-menu" class="">
-          <li class="toggle-close" id="toggle-close">
-            <i class="far fa-window-close"></i>
-          </li>
+      <div class="my_nav_layer" id="my_nav_layer"></div>
+      <div class="my_nav_menu" id="my_nav_menu">
+        <div class="my_toggle_close" id="my_toggle_close">
+          <i class="far fa-times-circle"></i>
+        </div>
+        <ul>
           <li>
             <a href="#about">
               About
             </a>
           </li>
           <li>
-            <a href="#skills">
+            <a href="#skill">
               Skills
             </a>
           </li>
           <li>
-            <a href="#projects">
+            <a href="#project">
               Projects
             </a>
           </li>
           <li>
             <a href="#contact">
-              Contact
+              Contacts
             </a>
           </li>
         </ul>
       </div>
-      <div class="my-toggle-menu" id="toggle-menu">
+      <div class="my_toggle_menu " id="my_toggle_menu">
         <i class="fas fa-bars"></i>
       </div>
+      
     </div>
   </nav>
   
   <!-- hero -->
-  <section id="hero">
-    <div class="hero-info">
-      <p>
-        Hallo,,
-      </p>
-      <h4>
-        I'm <span id="hero-name"></span>
-      </h4>
-      <p class="job">
-        - Web Developer -
-      </p>
-      <a href="#about" class="btn btn-primary">
-        About Me
-      </a>
-    </div>
-  </section>
   
   <script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
   <script src="assets/js/bootstrap.bundle.min.js" type="text/javascript" charset="utf-8"></script>
