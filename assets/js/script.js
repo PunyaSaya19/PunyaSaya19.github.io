@@ -1,11 +1,13 @@
 // inisialisasi variabel"
-const navbar = document.querySelector("#my-nav");
-const btnToggle = document.querySelector("#toggle-menu");
-const btnToggleClose = document.querySelector("#toggle-close");
-const myMenu = document.querySelector("#my-menu");
-const menuLists = document.querySelectorAll(".my-nav-menu ul li a");
+const navbar = document.querySelector("#my_nav");
+const navMenu = document.querySelector("#my_nav_menu");
+const btnToggle = document.querySelector("#my_toggle_menu");
+const btnToggleClose = document.querySelector("#my_toggle_close");
+const menuLists = document.querySelectorAll("#my_nav_menu ul li a");
+const navLayer = document.querySelector("#my_nav_layer");
 const allSection = document.querySelectorAll("section");
 
+/*
 const myText = new AutoTyping({
   id: 'hero-name',
   typeText: ['Rifan Hidayat'],
@@ -13,6 +15,7 @@ const myText = new AutoTyping({
   cursorColor: "#5C7AEA",
   typeSpeed: 200
 }).init();
+*/
 
 // action 
 window.addEventListener("DOMContentLoaded", () => {
@@ -30,15 +33,16 @@ window.onscroll = () => {
 }
 
 btnToggle.addEventListener("click", (e) => {
-  myMenu.classList.add("menu-active");
-})
-
+  navMenu.classList.add("menu_active");
+  navLayer.classList.add("layer_active");
+});
 btnToggleClose.addEventListener("click", (e) => {
-  myMenu.classList.remove("menu-active");
-})
-
+  navMenu.classList.remove("menu_active");
+  navLayer.classList.remove("layer_active");
+});
 menuLists.forEach((e) => {
   e.addEventListener("click", (el) => {
-    myMenu.classList.remove("menu-active");
+    navMenu.classList.remove("menu_active");
+    navLayer.classList.remove("layer_active");
   })
 })
