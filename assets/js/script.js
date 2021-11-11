@@ -16,8 +16,7 @@ const myText = new AutoTyping({
 
 // action 
 window.addEventListener("DOMContentLoaded", () => {
-
-  if ((window.innerHeight > 810) && (window.innerWidth > 768)) {
+  if ((window.innerHeight > 850) && (window.innerWidth > 768)) {
     document.documentElement.style.setProperty('--section-min-height', '600px');
   }
 })
