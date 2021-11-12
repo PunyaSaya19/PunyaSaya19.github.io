@@ -57,9 +57,13 @@ section {
   background : #fff;
   box-shadow: 0 1px 2px rgba(0,0,0,.2);
 }
+#my_nav.nav-active .my_nav_logo a, 
+#my_nav.nav-active .my_nav_menu ul li a {
+  color: var(--font-dark);
+}
 #my_nav {
   background : transparent;
-  transition: .75s;
+  transition: .5s;
   padding: .35rem 0;
 }
 
@@ -67,10 +71,11 @@ section {
   font-size: var(--h1-size);
   text-decoration: none;
   font-weight: 400;
-  color : var(--font-dark);
+  color: var(--font-light);
 }
 .my_nav_logo a span {
   font-weight: 800;
+  transition: .75s;
 }
 .my_nav_logo a:hover span {
   color: var(--blue);
@@ -91,10 +96,11 @@ section {
 .my_nav_menu ul li a {
   display: block;
   text-decoration: none;
-  color : var(--font-dark);
+  color : var(--font-light);
   transition: 0.75s;
+  font-weight: 600;
   position: relative;
-  font-family: "Poppins";
+  
 }
 .my_nav_menu ul li a:hover {
   color : var(--blue);
@@ -106,7 +112,8 @@ section {
   height: 3px;
   background: var(--blue);
   bottom: 0;
-  left: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
   border-radius: 2px;
   animation: listMenuHover .5s forwards;
 }
@@ -119,6 +126,15 @@ section {
 }
 
 
+/* hero section */
+#hero {
+  background: var(--bg-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 
 /* mobile version */
 @media (max-width : 768px) {
@@ -127,6 +143,9 @@ section {
     top: 50%;
     opacity: 1;
     transform: translate(-50%, -50%);
+  }
+  #my_nav.nav-active #my_toggle_menu i {
+    color: var(--font-dark);
   }
   .my_nav_menu {
     position: fixed;
@@ -154,7 +173,7 @@ section {
     margin: .3rem 0;
     font-size: var(--h4-size);
     font-weight: 600;
-    
+    color: var(--font-dark);
   }
   .my_nav_menu ul li a:hover::before {
     left: 50%;
@@ -189,6 +208,7 @@ section {
   }
   #my_toggle_menu i {
     font-size: var(--h4-size);
+    color: var(--font-light);
   }
 }
 
