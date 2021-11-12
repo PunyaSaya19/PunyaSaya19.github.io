@@ -10,9 +10,11 @@ const allSection = document.querySelectorAll("section");
 
 // action 
 window.addEventListener("DOMContentLoaded", () => {
-  if ((window.innerHeight > 850) && (window.innerWidth > 768)) {
-    document.documentElement.style.setProperty('--section-min-height', '600px');
-  }
+  // set section height
+  setSectionHeight()
+  
+  // set padding top section
+  setSectionPadTop();
   // text typing
   const myText = new AutoTyping({
     id: 'hero_name',
@@ -45,3 +47,16 @@ menuLists.forEach((e) => {
     navLayer.classList.remove("layer_active");
   })
 })
+
+
+// function 
+function setSectionHeight() {
+  if ((window.innerHeight > 850) && (window.innerWidth > 768)) {
+    document.documentElement.style.setProperty('--section-min-height', '600px');
+  }
+}
+
+function setSectionPadTop() {
+  const navHeight = navbar.clientHeight + 5;
+  document.documentElement.style.setProperty('--section-padding-top', `${navHeight}px`);
+}
