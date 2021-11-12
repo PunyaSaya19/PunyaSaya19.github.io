@@ -7,22 +7,21 @@ const menuLists = document.querySelectorAll("#my_nav_menu ul li a");
 const navLayer = document.querySelector("#my_nav_layer");
 const allSection = document.querySelectorAll("section");
 
-/*
-const myText = new AutoTyping({
-  id: 'hero-name',
-  typeText: ['Rifan Hidayat'],
-  textColor: "#5C7AEA",
-  cursorColor: "#5C7AEA",
-  typeSpeed: 200
-}).init();
-*/
 
 // action 
 window.addEventListener("DOMContentLoaded", () => {
   if ((window.innerHeight > 850) && (window.innerWidth > 768)) {
     document.documentElement.style.setProperty('--section-min-height', '600px');
   }
-})
+  // text typing
+  const myText = new AutoTyping({
+    id: 'hero_name',
+    typeText: ['Rifan Hidayat'],
+    textColor: "#1597E5",
+    cursorColor: "#1597E5",
+    typeSpeed: 200
+  }).init();
+});
 
 window.onscroll = () => {
   if (window.pageYOffset > 0) {
