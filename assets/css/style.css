@@ -337,6 +337,25 @@ section.section {
   font-size: .8rem;
 }
 
+#skill .skill_box {
+  transition: .5s;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+#skill .skill_box:hover {
+  transform: scale(1.02);
+}
+#skill .skill_box::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: var(--bg-blue);
+}
+
 
 /* mobile version */
 @media (max-width : 768px) {
