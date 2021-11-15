@@ -58,5 +58,5 @@ function setSectionHeight() {
 
 function setSectionPadTop() {
   const navHeight = navbar.clientHeight + 5;
-  document.documentElement.style.setProperty('--section-padding-top', `${navHeight}px`);
+  document.documentElement.style.setProperty('--section-padding-top', `${navHeight + 5}px`);
 }
