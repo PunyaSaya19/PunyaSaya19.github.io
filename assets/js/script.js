@@ -12,7 +12,7 @@ const allSection = document.querySelectorAll("section");
 window.addEventListener("DOMContentLoaded", () => {
   // set section height
   setSectionHeight()
-  
+
   // set padding top section
   setSectionPadTop();
   // text typing
@@ -58,5 +58,5 @@ function setSectionHeight() {
 
 function setSectionPadTop() {
   const navHeight = navbar.clientHeight + 5;
-  document.documentElement.style.setProperty('--section-padding-top', `${navHeight + 5}px`);
+  document.documentElement.style.setProperty('--section-padding-top', `${navHeight + 15}px`);
 }
