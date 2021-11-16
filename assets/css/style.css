@@ -3,7 +3,7 @@
 /* root desktop */
 :root {
   /* color */
-  --bg-white : #fdfdfd;
+  --bg-white : #efefef;
   --bg-dark : #000;
   --bg-blue : #09009B;
   
@@ -297,8 +297,13 @@ section.section {
   position: relative;
   padding: 5px 5px 5px 0;
   padding-left: 1.2rem;
-  
-  
+  background: #fefefe;
+}
+.education_box .school_head i.icn_school {
+  color: #333;
+  font-size: 1.3rem;
+  cursor: pointer;
+  font-weight: 800;
 }
 .education .education_box::before {
   content: "";
@@ -328,13 +333,17 @@ section.section {
 .education_box h4 a {
   font-size: 1.3rem;
   margin-bottom: 0;
+  font-family: "Poppins";
 }
 .education_box h6 {
   font-size: .9rem;
   font-weight: 600;
+  font-family: "Poppins";
 }
 .education_box p {
   font-size: .8rem;
+  font-family: "Poppins";
+  color: #777;
 }
 
 #skill .skill_box {
@@ -342,6 +351,7 @@ section.section {
   cursor: pointer;
   overflow: hidden;
   position: relative;
+  background: #fefefe;
 }
 #skill .skill_box:hover {
   transform: scale(1.02);
@@ -353,6 +363,13 @@ section.section {
   top: 0;
   height: 100%;
   width: 2px;
+  background: var(--bg-blue);
+}
+.skill_box .sill_info h4 {
+  font-weight: 600;
+  color: #111;
+}
+.skill_box .progress .bg-progress {
   background: var(--bg-blue);
 }
 

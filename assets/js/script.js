@@ -60,3 +60,9 @@ function setSectionPadTop() {
   const navHeight = navbar.clientHeight + 5;
   document.documentElement.style.setProperty('--section-padding-top', `${navHeight + 15}px`);
 }
+
+function gantiIconUp(e) {
+  setTimeout(() => {
+    e.classList.toggle("fa-angle-up")
+  }, 400);
+}
