@@ -214,6 +214,9 @@ section.section {
 }
 
 /* about */
+#about .about_img {
+  
+}
 #about #about_imgs {
   float: right;
   width : 70%;
@@ -292,17 +295,18 @@ section.section {
 #skill .container .row {
   text-align: left;
 }
+#skill .container .education {
+  
 
+}
 .education .education_box {
   position: relative;
-  padding: 5px 5px 5px 0;
   padding-left: 1.2rem;
-  
-  
+  padding-top: 0;
 }
 .education .education_box::before {
   content: "";
-  width: 2px;
+  width: 3px;
   height: 100%;
   background: #3987f4;
   position: absolute;
@@ -320,40 +324,6 @@ section.section {
   top: 0;
   border-radius: 50%;
   transform: translate(-50%, 0);
-}
-.education_box h4 {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.education_box h4 a {
-  font-size: 1.3rem;
-  margin-bottom: 0;
-}
-.education_box h6 {
-  font-size: .9rem;
-  font-weight: 600;
-}
-.education_box p {
-  font-size: .8rem;
-}
-
-#skill .skill_box {
-  transition: .5s;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-}
-#skill .skill_box:hover {
-  transform: scale(1.02);
-}
-#skill .skill_box::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 2px;
-  background: var(--bg-blue);
 }
 
 
