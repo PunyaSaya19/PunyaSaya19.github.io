@@ -6,13 +6,14 @@ const btnToggleClose = document.querySelector("#my_toggle_close");
 const menuLists = document.querySelectorAll("#my_nav_menu ul li a");
 const navLayer = document.querySelector("#my_nav_layer");
 const allSection = document.querySelectorAll("section");
-
+const loadingScreen = document.querySelector("#loading_screen");
 
 // action 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("load", () => {
+  // remove lpading screen 
+  removeLoadingScreen();
   // set section height
-  setSectionHeight()
-
+  setSectionHeight();
   // set padding top section
   setSectionPadTop();
   // text typing
@@ -59,4 +60,8 @@ function setSectionHeight() {
 function setSectionPadTop() {
   const navHeight = navbar.clientHeight + 5;
   document.documentElement.style.setProperty('--section-padding-top', `${navHeight + 15}px`);
+}
+
+function removeLoadingScreen() {
+  loadingScreen.style.display = "none";
 }
