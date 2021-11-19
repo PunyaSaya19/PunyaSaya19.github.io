@@ -3,24 +3,29 @@
 /* root desktop */
 :root {
   /* color */
-  --bg-white : #fdfdfd;
+  --bg-white : #fff;
   --bg-dark : #000;
   --bg-blue : #0F00FF;
   
   /* font size */
-  --h1-size : 2.25rem;
-  --h2-size : 2rem;
-  --h4-size : 1.5rem;
-  --h6-size : 1rem;
-  --p-size : .95rem;
+  --big-font-size: 2rem;
+  --h1-font-size: 1.75rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
   
   /* font color */
   --font-light : #fff;
-  --font-dark : #111;
-  /*--font-blue : #0F00FF;*/
-  --font-blue : #1597E5;
+  --font-dark : #0e2431;
+  --font-blue : #0F00FF;
+  --font-blue-light : #1597E5;
   /* other */
-  --section-min-height : 100vh;
   --section-padding-top : 30px;
 }
 
@@ -28,11 +33,13 @@
 @media (max-width : 768px) {
   :root {
     /* font size */
-    --h1-size : 2rem;
-    --h2-size : 1.75rem;
-    --h4-size : 1.5rem;
-    --h6-size : 1.2rem;
-    --p-size : .95rem;
+    --big-font-size: 3.5rem;
+    --h1-font-size: 2.1rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
   }
 }
 
@@ -50,14 +57,45 @@ html {
 body {
   width: 100%;
   background : var(--bg-white);
-  min-height: 2000px;
+  font-size: var(--normal-font-size);
   overflow-x: hidden;
+  min-height: 15000px;
 }
-section {
-  min-height: var(--section-min-height);
-}
+
 section.section {
   padding-top: var(--section-padding-top);
+  padding-bottom: 30px;
+}
+.title_heading {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: var(--font-dark);
+}
+.title_heading::before {
+  content: "";
+  width: 65%;
+  height: 4px;
+  border-radius: 3px;
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  transform: translate(-50%, 0);
+  background: var(--font-blue);
+}
+.title_heading::after {
+  content: "";
+  left: 50%;
+  bottom: 0;
+  position: absolute;
+  transform: translate(-50%, 0);
+  background: var(--font-blue);
+  width: 4px;
+  height: 4px;
+  outline-offset: 0;
+  outline: var(--bg-white) solid 5px;
 }
 
 /* loading screen */
@@ -139,20 +177,7 @@ section.section {
   width: 120px;
   height: 120px;
 }
-/*
-#loading_screen .loading::before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  position: absolute;
-  border: 3px solid transparent;
-  border-right: 3px solid var(--font-blue);
-  border-top: 3px solid var(--font-blue);
-  
-}
-*/
+
 /* navbar */
 #my_nav.nav-active {
   background : #fff;
@@ -169,10 +194,10 @@ section.section {
 }
 
 .my_nav_logo a {
-  font-size: var(--h1-size);
+  font-size: var(--h1-font-size);
   text-decoration: none;
-  font-weight: 400;
-  color: var(--font-light);
+  font-weight: 500;
+  color: var(--font-dark);
 }
 .my_nav_logo a span {
   font-weight: 800;
@@ -197,11 +222,10 @@ section.section {
 .my_nav_menu ul li a {
   display: block;
   text-decoration: none;
-  color : var(--font-light);
+  color : var(--font-dark);
   transition: 0.75s;
   font-weight: 600;
   position: relative;
-  
 }
 .my_nav_menu ul li a:hover {
   color : var(--font-blue);
@@ -214,7 +238,7 @@ section.section {
   background: var(--font-blue);
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translate(-50%, 100%);
   border-radius: 2px;
   animation: listMenuHover .5s forwards;
 }
@@ -229,12 +253,12 @@ section.section {
 
 /* hero section */
 #hero {
-  background-image: url('../img/bg1.jpg');
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--font-light);
+  color: var(--font-dark);
   background-attachment: fixed;
+  min-height: 100vh;
 }
 
 #hero .container {
@@ -247,7 +271,7 @@ section.section {
   width: 50%;
 }
 .hero_info h4 {
-  font-size: 3rem;
+  font-size: var(--big-font-size);
   font-weight: 600;
   font-family: "Poppins";
   margin-bottom: .2rem;
@@ -259,30 +283,32 @@ section.section {
 .hero_info h2 span {
   font-weight: 800;
   color: var(--font-blue);
-  text-shadow: 0 0 2px rgba(0,0,0,.5);
+  
 }
 .hero_info p {
   font-weight: normal;
-  text-shadow: 0 0 2px rgba(0,0,0,.5);
+  color: #2C272E;
   margin-bottom: 1rem;
 }
 .hero_info a.hero_button {
-  border: 2px solid #fff;
+  border: 2px solid var(--font-blue);
   border-radius: 5px;
-  padding: .3rem .7rem;
-  color: var(--font-light);
+  padding: .5rem .8rem;
+  color: var(--font-blue);
   text-decoration: none;
   vertical-align: middle;
   font-weight: 600;
   font-family: "Poppins";
   transition: .5s;
-}
-.hero_info a.hero_button:hover {
   background: var(--font-blue);
   border: 2px solid var(--font-blue);
-  color: #000;
-  letter-spacing: .1rem;
+  color: var(--font-light);
 }
+.hero_info a.hero_button:hover {
+  
+  
+}
+
 #hero .hero_img {
   text-align: center;
   width: 50%;
@@ -293,10 +319,11 @@ section.section {
   border-radius: 50%;
   border: 3px solid #ededed;
   margin-bottom: .7rem;
-  box-shadow: 2px 2px 3px rgba(0,0,0,.5);
+  
+  
 }
 .hero_img .hero_sosmed a {
-  color: var(--font-light);
+  color: var(--font-blue);
   font-size: 1.3rem;
   margin: 0 .1rem;
   transition: 1s;
@@ -307,9 +334,6 @@ section.section {
 }
 
 /* about */
-#about .about_img {
-  
-}
 #about #about_imgs {
   float: right;
   width : 70%;
@@ -337,43 +361,12 @@ section.section {
 }
 
 #about .about_info h4 {
-  font-size: var(--h2-size);
+  font-size: var(--h1-font-size);
   font-weight: 600;
-  
 }
 #about .about_info h4 span {
   color: var(--font-blue);
   font-weight: 800;
-}
-.title_heading {
-  position: relative;
-  display: inline-block;
-  padding-bottom: 3px;
-  font-size: var(--h2-size);
-  font-weight: 600;
-}
-.title_heading::before {
-  content: "";
-  width: 65%;
-  height: 4px;
-  border-radius: 3px;
-  left: 50%;
-  bottom: 0;
-  position: absolute;
-  transform: translate(-50%, 0);
-  background: var(--font-blue);
-}
-.title_heading::after {
-  content: "";
-  left: 50%;
-  bottom: 0;
-  position: absolute;
-  transform: translate(-50%, 0);
-  background: var(--font-blue);
-  width: 4px;
-  height: 4px;
-  outline-offset: 0;
-  outline: var(--bg-white) solid 5px;
 }
 #about .about_info p {
   font-weight: normal;
@@ -476,25 +469,26 @@ section.section {
 @media (max-width : 768px) {
   /* navbar */
   .my_nav_menu.menu_active {
-    top: 50%;
+    bottom: 0;
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, 0);
   }
   #my_nav.nav-active #my_toggle_menu i {
     color: var(--font-dark);
   }
   .my_nav_menu {
     position: fixed;
-    top: -10px;
+    bottom: 0;
     left: 50%;
     background: #fff;
     z-index: 3;
-    transform: translate(-50%, -100%);
-    width: 75%;
-    padding: 0 0 1rem 0 ;
+    transform: translate(-50%, 100%);
+    width: 90%;
+    padding: 0 0 1.4rem 0;
     opacity: 0;
     border-radius: 5px;
-    transition: .5s linear;
+    transition: .3s linear;
+    
   }
   .my_nav_menu ul {
     flex-direction: column;
@@ -507,8 +501,8 @@ section.section {
     width: 100%;
     padding: .5rem 0;
     margin: .3rem 0;
-    font-size: var(--h4-size);
-    font-weight: 600;
+    font-size: var(--h3-font-size);
+    font-weight: 500;
     color: var(--font-dark);
   }
   .my_nav_menu ul li a:hover::before {
@@ -516,16 +510,6 @@ section.section {
     bottom: 0;
     transform: translate(-50%, 0);
   }
-  .my_nav_menu .my_toggle_close {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding: 5px 7px 0 0;
-  }
-  .my_nav_menu .my_toggle_close i {
-    font-size: var(--h1-size);
-  }
-  
   .my_nav_layer {
     position: fixed;
     z-index: 2;
@@ -543,8 +527,8 @@ section.section {
     display: block;
   }
   #my_toggle_menu i {
-    font-size: var(--h4-size);
-    color: var(--font-light);
+    font-size: var(--h2-font-size);
+    color: var(--font-dark);
   }
   
   /* hero */
@@ -556,10 +540,13 @@ section.section {
     text-align: center;
   }
   .hero_info h4 {
-    font-size: var(--h2-size);
+    font-size: var(--h2-font-size);
   }
   .hero_info h2 {
-    font-size: var(--h1-size);
+    font-size: var(--h1-font-size);
+  }
+  .hero_info p {
+    font-size: var(--small-font-size);
   }
   #hero .hero_img {
     width: 100%;
@@ -579,7 +566,7 @@ section.section {
     transform: translate(-50%, 0);
   }
   .hero_img .hero_sosmed a {
-    font-size: var(--h2-size);
+    font-size: var(--h3-font-size);
     margin: 0 .1rem;
   }
   
@@ -603,7 +590,7 @@ section.section {
     text-align: center;
   }
   #about .about_info h4 {
-    font-size: var(--h1-size);
+    font-size: var(--h1-font-size);
     font-weight: 600;
     padding-bottom: 2px;
     position: relative;
