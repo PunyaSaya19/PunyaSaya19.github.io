@@ -17,13 +17,7 @@ window.addEventListener("load", () => {
   // set padding top section
   setSectionPadTop();
   // text typing
-  const myText = new AutoTyping({
-    id: 'hero_name',
-    typeText: ['Rifan Hidayat'],
-    textColor: "#1597E5",
-    cursorColor: "#4070F4",
-    typeSpeed: 200
-  }).init();
+  
 });
 
 window.onscroll = () => {
