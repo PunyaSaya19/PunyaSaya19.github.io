@@ -4,7 +4,7 @@
 /* root desktop */
 :root {
   /* color */
-  --bg-white : #fff;
+  --bg-white : #fbfbfe;
   --bg-dark : #000;
   --bg-blue : #0F00FF;
   
@@ -19,10 +19,11 @@
 
   /* font color */
   --font-light : #fff;
-  --font-dark : #0e2431;
-  --font-grey : #787A91;
-  --font-blue : #0F00FF;
-  --font-blue-light : #1597E5;
+  --font-dark : #242329;
+  --font-grey : #a19fad;
+  --font-purple : #5a43cb;
+  --font-purple-light : #6e57e0;
+  --font-purple-lighter : #c1b6fc;
   /* other */
   --section-padding-top : 30px;
 }
@@ -81,7 +82,7 @@ section.section {
   bottom: 0;
   position: absolute;
   transform: translate(-50%, 0);
-  background: var(--font-blue);
+  background: var(--font-purple);
 }
 .title_heading::after {
   content: "";
@@ -89,7 +90,7 @@ section.section {
   bottom: 0;
   position: absolute;
   transform: translate(-50%, 0);
-  background: var(--font-blue);
+  background: var(--font-purple);
   width: 4px;
   height: 4px;
   outline-offset: 0;
@@ -132,8 +133,8 @@ section.section {
   border: 3px solid #3c3c3c;
   height: 100%;
   width: 100%;
-  border-top: 3px solid var(--font-blue);
-  border-left: 3px solid var(--font-blue);
+  border-top: 3px solid var(--font-purple);
+  border-left: 3px solid var(--font-purple);
   border-radius: 50%;
   animation: loading1 2s linear infinite;
 }
@@ -145,8 +146,8 @@ section.section {
   border: 3px solid #3c3c3c;
   height: 100%;
   width: 100%;
-  border-top: 3px solid var(--font-blue);
-  border-right: 3px solid var(--font-blue);
+  border-top: 3px solid var(--font-purple);
+  border-right: 3px solid var(--font-purple);
   border-radius: 50%;
   animation: loading2 2s linear infinite;
 }
@@ -158,8 +159,8 @@ section.section {
   border: 3px solid #3c3c3c;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid var(--font-blue);
-  border-left: 3px solid var(--font-blue);
+  border-bottom: 3px solid var(--font-purple);
+  border-left: 3px solid var(--font-purple);
   border-radius: 50%;
   animation: loading1 2s linear infinite;
 }
@@ -202,7 +203,7 @@ section.section {
   transition: .75s;
 }
 .my_nav_logo a:hover span {
-  color: var(--font-blue);
+  color: var(--font-purple);
 }
 
 .my_nav_menu ul {
@@ -226,14 +227,14 @@ section.section {
   position: relative;
 }
 .my_nav_menu ul li a:hover {
-  color : var(--font-blue);
+  color : var(--font-purple);
 }
 .my_nav_menu ul li a:hover::before {
   content: "";
   position: absolute;
   width: 0;
   height: 3px;
-  background: var(--font-blue);
+  background: var(--font-purple);
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 100%);
@@ -256,6 +257,7 @@ section.section {
   align-items: center;
   color: var(--font-dark);
   min-height: 100vh;
+  background: #fff;
 }
 
 #hero .container {
@@ -293,9 +295,12 @@ section.section {
   font-weight: 500;
   font-family: "Poppins";
   transition: .5s;
-  background: var(--font-blue);
+  background: var(--font-purple);
   color: var(--font-light);
   cursor: pointer;
+}
+.hero_info a.hero_button:hover {
+  background: var(--font-purple-lighter);
 }
 .hero_info a.hero_button i {
   margin-left: .3rem;
@@ -306,23 +311,23 @@ section.section {
   width: 50%;
 }
 #hero .hero_img img {
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   border: 3px solid #ededed;
   margin-bottom: .7rem;
-  
-  
+  margin-left: 2rem;
 }
 .hero_img .hero_sosmed a {
-  color: var(--font-blue);
+  color: var(--font-grey);
   font-size: 1.3rem;
   margin: 0 .1rem;
   transition: 1s;
   text-decoration: none;
 }
 .hero_img .hero_sosmed a:hover i {
-  transform: scale(1.2);
+  transform: scale(1.1);
+  color: var(--font-purple);
 }
 
 /* about */
@@ -337,7 +342,7 @@ section.section {
   font-weight: 600;
 }
 #about .about_info h4 span {
-  color: var(--font-blue);
+  color: var(--font-purple);
   font-weight: 800;
 }
 #about .about_info p {
@@ -367,7 +372,7 @@ section.section {
   height: .7rem;
 }
 #skill .box_skill .progress .progress-bar {
-  background: var(--font-blue);
+  background: var(--font-purple);
 }
 /* mobile version */
 @media (max-width : 768px) {
@@ -457,7 +462,13 @@ section.section {
     width: 100%;
     margin-bottom: .1rem;
     position: relative;
-    padding-bottom: 1rem;
+    justify-content: center !important;
+    flex-direction: row;
+  }
+  #hero .hero_img img {
+    width: 250px;
+    height: 250px;
+    margin-right: 1rem;
   }
   
   .hero_img .hero_sosmed a {
