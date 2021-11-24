@@ -21,6 +21,8 @@
   --font-light : #fff;
   --font-dark : #242329;
   --font-grey : #a19fad;
+  --font-grey-2 : #6d6a7c;
+  --font-grey-3 : #f0eefc;
   --font-purple : #5a43cb;
   --font-purple-light : #6e57e0;
   --font-purple-lighter : #c1b6fc;
@@ -63,7 +65,7 @@ body {
 
 section.section {
   padding-top: var(--section-padding-top);
-  padding-bottom: 30px;
+  padding-bottom: 1.75rem;
 }
 .title_heading {
   position: relative;
@@ -191,7 +193,6 @@ section.section {
   transition: .3s;
   padding: .35rem 0;
 }
-
 .my_nav_logo a {
   font-size: var(--h1-font-size);
   text-decoration: none;
@@ -205,7 +206,6 @@ section.section {
 .my_nav_logo a:hover span {
   color: var(--font-purple);
 }
-
 .my_nav_menu ul {
   list-style: none;
   display: flex;
@@ -244,11 +244,9 @@ section.section {
 .my_nav_menu .my_toggle_close {
   display: none;
 }
-
 #my_toggle_menu {
   display: none;
 }
-
 
 /* hero section */
 #hero {
@@ -259,13 +257,11 @@ section.section {
   min-height: 100vh;
   background: #fff;
 }
-
 #hero .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 #hero .hero_info {
   width: 50%;
 }
@@ -305,10 +301,9 @@ section.section {
 .hero_info a.hero_button i {
   margin-left: .3rem;
 }
-
 #hero .hero_img {
   text-align: center;
-  width: 50%;
+  width: 40%;
 }
 #hero .hero_img img {
   width: 200px;
@@ -318,14 +313,17 @@ section.section {
   margin-bottom: .7rem;
   margin-left: 2rem;
 }
-.hero_img .hero_sosmed a {
+#hero .hero_sosmed {
+  width: 10%;
+}
+#hero .hero_sosmed a {
   color: var(--font-grey);
   font-size: 1.3rem;
   margin: 0 .1rem;
   transition: 1s;
   text-decoration: none;
 }
-.hero_img .hero_sosmed a:hover i {
+#hero .hero_sosmed a:hover i {
   transform: scale(1.1);
   color: var(--font-purple);
 }
@@ -333,10 +331,9 @@ section.section {
 /* about */
 #about .about_img img{
   width : 100%;
-  max-height: 500px;
+  max-height: 300px;
   border-radius: 5px;
 }
-
 #about .about_info h4 {
   font-size: var(--h1-font-size);
   font-weight: 600;
@@ -355,25 +352,43 @@ section.section {
 #skill .container {
   text-align: center;
 }
-#skill .box_skill {
-  padding: .6rem;
+#skill .skill_bx {
   background: #fff;
+  width: 30%;
+  transition: .65s;
 }
-#skill .box_skill .skill_info h4 {
-  font-size: var(--h3-font-size);
+#skill .skill_bx:hover {
+  background: var(--font-purple-light) ;
+  transform: translate(0, -4%);
+}
+#skill .skill_bx:hover .skill_percent {
+  border-color: var(--bg-white);
+  color: var(--bg-white);
+}
+#skill .skill_bx:hover .skill_info h4 {
+  color: var(--bg-white);
+}
+.skill_bx .skill_percent {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 3px solid var(--font-purple-light);
+  font-size: var(--h2-font-size);
+  color: var(--font-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .7rem;
+  transition: .65s;
+}
+.skill_bx .skill_info h4 {
+  font-size: var(--h2-font-size);
+  color: var(--font-grey-2);
   font-family: "Poppins";
-  margin-bottom: 0
+  transition: .65s;
 }
-#skill .box_skill .skill_info p {
-  font-family: "Poppins";
-  margin-bottom: 0
-}
-#skill .box_skill .progress {
-  height: .7rem;
-}
-#skill .box_skill .progress .progress-bar {
-  background: var(--font-purple);
-}
+
 /* mobile version */
 @media (max-width : 768px) {
   /* navbar */
@@ -470,10 +485,16 @@ section.section {
     height: 250px;
     margin-right: 1rem;
   }
-  
-  .hero_img .hero_sosmed a {
+  #hero .hero_sosmed {
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: .1rem;
+  }
+  #hero .hero_sosmed a {
     font-size: var(--h2-font-size);
-    margin: 0 .1rem;
+    margin: 0 .25rem;
+    
   }
   
   /* about section */
@@ -492,9 +513,14 @@ section.section {
   }
   
   /* skill */
-  #skill .box_skill {
-    padding: .75rem;
-   margin: 0 1rem;
+  #skill .skill_bx {
+    width: 80%;
+    transition: .65s;
+    padding: 2rem 0 !important;
+  }
+  .skill_bx .skill_percent {
+    width: 100px;
+    height: 100px;
   }
   
 }
