@@ -296,7 +296,7 @@ section.section {
   cursor: pointer;
 }
 .hero_info a.hero_button:hover {
-  background: var(--font-purple-lighter);
+  background: var(--font-purple-light);
 }
 .hero_info a.hero_button i {
   margin-left: .3rem;
@@ -387,6 +387,22 @@ section.section {
   color: var(--font-grey-2);
   font-family: "Poppins";
   transition: .65s;
+}
+
+/* prohect/Portofolio*/
+#project .container {
+  background: var(--font-purple-light);
+  border-radius: .5rem;
+  text-align: center;
+}
+#project h2.heading_project {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 3px;
+  font-weight: 600;
+  font-family: "Poppins";
+  color: var(--font-light);
+  text-align: center;
 }
 
 /* mobile version */
