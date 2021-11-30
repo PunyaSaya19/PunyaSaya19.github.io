@@ -392,10 +392,12 @@ section.section {
 /* prohect/Portofolio*/
 #project .container {
   background: var(--font-purple-light);
-  border-radius: .5rem;
   text-align: center;
+  overflow: hidden;
+  height: 100%!important;
+  position: relative !important;
 }
-#project h2.heading_project {
+#project h2.project_heading {
   position: relative;
   display: inline-block;
   padding-bottom: 3px;
@@ -403,6 +405,37 @@ section.section {
   font-family: "Poppins";
   color: var(--font-light);
   text-align: center;
+}
+#project .project_box {
+  width: 100%;
+  position: relative;
+}
+.project_box .project_bx {
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+}
+.project_bx .project_img {
+  width: 230px;
+  height: 150px;
+  border-radius: .5rem;
+}
+.project_bx .project_info {
+  text-align: left;
+  margin-left: .9rem;
+}
+.project_info h6 {
+  font-size: var(--h2-font-size);
+}
+.project_info p {
+  font-size: var(--normal-font-size);
+}
+.project_info a.project_button {
+  background: var(--font-purple-light);
+  text-decoration: none;
+  color: var(--font-light);
+  font-size: var(--normal-font-size);
 }
 
 /* mobile version */

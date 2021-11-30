@@ -17,7 +17,6 @@ window.addEventListener("load", () => {
   // set padding top section
   setSectionPadTop();
   // text typing
-  
 });
 
 window.onscroll = () => {
@@ -43,6 +42,30 @@ menuLists.forEach((e) => {
     navLayer.classList.remove("layer_active");
   })
 })
+
+// swiper 
+const swiper = new Swiper('#project_swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 40,
+  cssMode: true,
+  speed: 400,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+ 
+});
 
 
 // function 
