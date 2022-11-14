@@ -12,7 +12,7 @@ $(document).ready(function(){
         loop : true,
         responsive : {
             576 : {
-                items : 2,
+                items : 3,
             }
         }
     });

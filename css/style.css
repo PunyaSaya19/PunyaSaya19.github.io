@@ -266,51 +266,58 @@ body {
 }
 #portfolio .portfolio_boxs .portfolio_box .portfolio_bx {
     background-color: var(--bg-secondary);
-    padding: .7rem;
+    padding: 1rem;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     padding-bottom: 1.2rem;
-    justify-content: center;
-    align-items: center;
+    /* cursor: pointer; */
+}
+#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img {
+    position: relative;
+    margin-bottom: .6rem;
 }
 #portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img img {
-    width: 300px;
-    height: 200px;
+    width: 100%;
     border-radius: 5px;
 }
-#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info {
-    padding-left: 1rem;
+#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img .portfolio_img_layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .5s;
+    backdrop-filter: blur(3px);
 }
-#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info h6.portfolio_info_title {
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: var(--text-primary);
-    margin-bottom: .7rem;
+#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img .portfolio_img_layer:hover {
+    opacity: 1;
 }
-#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info p.portfolio_info_desc {
-    font-size: .88rem;
-    color:  var(--text-secondary);
-    margin-bottom: 1rem;
-}
-#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info a.portfolio_info_btn {
+#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img .portfolio_img_layer  a {
     text-decoration: none;
-    padding: .3rem 1.1rem;
-    border-radius: 5px;
+    margin: 0 .5rem;
+    padding: .5rem 1.2rem;
+    border-radius: 10px;
     font-weight: 500;
     font-size: 1rem;
-    transition: .4s;
     border: 3px solid var(--secondary-color);
     background-color: var(--secondary-color);
     color: var(--bg-primary);
 }
-#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info a.portfolio_info_btn span {
-    margin-left: .2rem;
-    padding: 0;
-}
-#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info a.portfolio_info_btn:hover{
-    border: 3px solid var(--primary-color) !important;
-    background-color: var(--primary-color) !important;
-    color: var(--bg-primary) !important;
+
+#portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info h6.portfolio_info_title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0;
+    font-family: 'Nunito';
+    text-align: center;
+    color: var(--primary-color);
 }
 
 
