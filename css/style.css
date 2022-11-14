@@ -321,6 +321,61 @@ body {
     color: var(--primary-color);
 }
 
+/* contact section */
+#contact {
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}
+#contact .contact_title h4 {
+    color: var(--bg-secondary);
+    font-size: 2rem;
+    font-family: 'Nunito';
+    font-weight: 700;
+    margin-bottom: 1.8rem;
+    position: relative;
+}
+#contact .contact_title h4::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+    width: 70%;
+    height: 2px;
+    background-color: var(--bg-secondary);
+}
+#contact .contact_button {
+    margin-bottom: 2rem;
+}
+#contact .contact_button a {
+    background-color: var(--bg-secondary);
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: .5rem 1.3rem;
+    border-radius: 5px;
+}
+#contact .contact_button a span {
+    margin-left: .3rem;
+}
+#contact .contact_sosmed .contact_icon {
+    color: var(--bg-primary);
+    font-size: 1.4rem;
+    display: inline-block;
+    margin: 0 .3rem;
+    cursor: pointer;
+}
+#footer {
+    background-color: var(--primary-color);
+    color: var(--bg-secondary);
+    font-size: .8rem;
+    text-align: center;
+    padding-bottom: .5rem;
+}
+
 
 /* mobile version */
 @media screen and (max-width: 576px) {
@@ -467,12 +522,25 @@ body {
         padding: .9rem;
         flex-direction: column;
     }
-    #portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img img {
+    #portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img {
         margin-bottom: 1rem;
+    }
+    #portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img img {
         width: 100%;
     }
     #portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_info {
         padding-left: 0;
+    }
+
+    /* contact section */
+    #contact {
+        padding: 4rem 1.3rem;
+    }
+    #contact .contact_title h4 {
+        text-align: center;
+    }
+    #contact .contact_title h4::before {
+        display: none;
     }
 }
 
