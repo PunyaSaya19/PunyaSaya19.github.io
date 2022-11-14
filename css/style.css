@@ -294,6 +294,7 @@ body {
     opacity: 0;
     transition: .5s;
     backdrop-filter: blur(3px);
+    border-radius: 10px;
 }
 #portfolio .portfolio_boxs .portfolio_box .portfolio_bx .portfolio_img .portfolio_img_layer:hover {
     opacity: 1;
