@@ -11,7 +11,7 @@
     margin: 0;
     box-sizing: border-box;
     /* color: var(--text-primary); */
-    list-style: none;
+    /* list-style: none; */
 }
 html {
     overflow-x: hidden; 
@@ -53,6 +53,7 @@ body {
 #my_nav_menu {
     display: flex;
     justify-content: center;
+    list-style: none;
 }
 #my_nav_menu li a{
     margin: 0 .9rem;
@@ -376,6 +377,105 @@ body {
     padding-bottom: .5rem;
 }
 
+/* detail section */
+#detail_project {
+    margin-top: 5rem;
+    padding: 0 8rem;
+}
+#detail_project h4.detail_title {
+    font-size: 1.3rem;
+    font-family: 'Nunito';
+    font-weight: 600;
+    margin-bottom: .8rem;
+}
+#detail_project h4.detail_title a {
+    padding: .2rem .5rem .2rem 1rem;
+    color: var(--text-secondary);
+    transition: .3s;
+}
+#detail_project h4.detail_title a:hover {
+    background-color: var(--secondary-color);
+    color: var(--bg-secondary);
+    margin-right: .5rem;
+    border-radius: 3px;
+}
+#detail_project .detail_container {
+    display: flex;
+}
+#detail_project .detail_container .detail_img {
+    width: 50%;
+}  
+#detail_project .detail_container .detail_img .img_main {
+    margin-bottom: .7rem;
+}
+#detail_project .detail_container .detail_img .img_main  img {
+    width: 100%;
+}
+#detail_project .detail_container .detail_img .img_main  img.d_none {
+    display: none;
+}
+#detail_project .detail_container .detail_img .img_control {
+    display: flex;
+    justify-content: center;
+}
+#detail_project .detail_container .detail_img .img_control .img_ctrl {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-secondary);
+    background-color: var(--secondary-color);
+    padding: .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'Nunito';
+}
+#detail_project .detail_container .detail_img .img_control .img_ctrl:hover{
+    background-color: var(--primary-color);
+}
+#detail_project .detail_container .detail_img .img_control .img_ctrl span {
+    margin: 0 .3rem;
+}
+#detail_project .detail_container .detail_img .img_control .img_prev {
+    margin-right: .5rem;
+}
+#detail_project .detail_container .detail_img .img_control .img_next {
+    margin-left: .5rem;
+}
+#detail_project .detail_container .detail_text {
+    width: 50%;
+    padding-left: 1.3rem;
+}
+#detail_project .detail_text h4.text_header {
+    font-size: 1.8rem;
+    font-family: 'Nunito';
+    color: var(--text-primary);
+}
+#detail_project .detail_text p.text_desc {
+    font-size: .89rem;
+    color: var(--text-secondary);
+    margin-bottom: .8rem;
+}
+#detail_project .detail_text h6.sub_title {
+    font-size: 1.2rem;
+    font-family: 'Nunito';
+    color: var(--text-primary);
+    font-weight: 600;
+}
+#detail_project .detail_text .fitur {
+    margin-bottom: .8rem;
+}
+#detail_project .detail_text .fitur ol,  #detail_project .detail_text .fitur ul{
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+    font-size: .95rem;
+}
+#detail_project .detail_text .teknologi {
+    padding-left: 1.2rem;
+    color: var(--text-secondary);
+    font-size: .95rem;
+}
 
 /* mobile version */
 @media screen and (max-width: 576px) {
