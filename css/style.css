@@ -378,9 +378,13 @@ body {
 }
 
 /* detail section */
+.body_detail {
+    background-color: var(--bg-secondary);
+}
 #detail_project {
     margin-top: 5rem;
     padding: 0 8rem;
+    margin-bottom: 2rem;
 }
 #detail_project h4.detail_title {
     font-size: 1.3rem;
