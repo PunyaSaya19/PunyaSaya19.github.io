@@ -1,10 +1,9 @@
 {
-  "wa" : "6288971837666",
   "datas" : 
   [
     {
       "id" : "PRJ006",
-      "judul" : "Sistem Parkir - LARAVEL 8",
+      "judul" : "Sistem Parkir",
       "img_folder" : "img/portfolio/sistem-parkir-lrv8/",
       "img_count" : 15,
       "img_main" : "main",
@@ -14,7 +13,7 @@
     },
     {
       "id" : "PRJ005",
-      "judul" : "Sistem Pengaduan Masyarakat - PHP NATIVE",
+      "judul" : "Sistem Pengaduan Masyarakat",
       "img_folder" : "img/portfolio/pengaduan-masyarakat/",
       "img_count" : 21,
       "img_main" : "main",
@@ -24,7 +23,7 @@
     },
     {
       "id" : "PRJ004",
-      "judul" : "Aplikasi Pengelolaan Laundry - PHP NATIVE",
+      "judul" : "Aplikasi Pengelolaan Laundry",
       "img_folder" : "img/portfolio/laundry-native/",
       "img_count" : 19,
       "img_main" : "main",
@@ -34,7 +33,7 @@
     },
     {
       "id" : "PRJ003",
-      "judul" : "Simpel POS Warung - PHP NATIVE",
+      "judul" : "Simpel POS Warung",
       "img_folder" : "img/portfolio/toko-sembako/",
       "img_count" : 30,
       "img_main" : "main",
@@ -44,7 +43,7 @@
     },
     {
       "id" : "PRJ002",
-      "judul" : "Aplikasi Pemilihan Osis - CI4",
+      "judul" : "Aplikasi Pemilihan Osis",
       "img_folder" : "img/portfolio/e-voting/",
       "img_count" : 21,
       "img_main" : "main",
@@ -54,7 +53,7 @@
     },
     {
       "id" : "PRJ001",
-      "judul" : "Pengelolaan Kas Masjid - PHP NATIVE",
+      "judul" : "Pengelolaan Kas Masjid",
       "img_folder" : "img/portfolio/kas-masjid-native/",
       "img_count" : 21,
       "img_main" : "main",
