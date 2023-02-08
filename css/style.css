@@ -642,6 +642,25 @@ body {
     #contact .contact_title h4::before {
         display: none;
     }
+
+    /* detail container */
+    #detail_project {
+        margin-top: 5rem;
+        padding: 0 1.3rem;
+    }
+    .detail_container {
+        flex-direction: column;
+    }
+    .detail_container .detail_img {
+        margin: 0;
+        padding: 0;
+        width: 100% !important;
+        margin-bottom: 1rem;
+    }
+    .detail_container .detail_text {
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
 }
 
 
