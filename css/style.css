@@ -324,7 +324,24 @@ body {
   }
   #about .container .about-menu {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  #about .container .about-menu h2.about-menu-title {
+    padding-left: 0;
+  }
+  #about .container .about-menu h2.about-menu-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    bottom: 0;
+    height: 5px;
+    width: 70%;
+    background-color: var(--first-color);
+    border-radius: 2px;
+    transform: translate(-50%, 0);
+    padding-bottom: 0;
   }
   #about .container .about-content {
     width: 100%;
