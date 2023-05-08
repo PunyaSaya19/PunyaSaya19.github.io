@@ -189,6 +189,7 @@ body {
 }
 #about .container .about-content .about-content-desc {
   margin-bottom: 1rem;
+  padding: 0 1rem;
 }
 #about .container .about-content .about-content-desc p {
   color: var(--text-color);
@@ -199,6 +200,7 @@ body {
 #about .container .about-content .about-content-nav {
   display: flex;
   justify-content: space-between;
+  padding: 0 1rem;
 }
 #about .container .about-content .about-content-nav a {
   background-color: var(--container-color);
@@ -231,6 +233,128 @@ body {
   margin-left: 0.3rem;
 }
 /* end about section */
+
+/*  skill section */
+#skill {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#skill .container {
+  display: flex;
+  align-content: center;
+}
+#skill .container .skill-menu {
+  width: 30%;
+}
+#skill .container .skill-menu h2.skill-menu-title {
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+  text-transform: capitalize;
+  position: relative;
+  font-family: "Nunito";
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding-left: 1rem;
+}
+#skill .container .skill-menu h2.skill-menu-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 70%;
+  width: 5px;
+  background-color: var(--first-color);
+  border-radius: 2px;
+  transform: translate(0, -50%);
+}
+#skill .container .skill-menu p.skill-menu-desc {
+  color: var(--text-color-alt);
+  font-size: var(--h6-font-size);
+  margin-bottom: 0.5rem;
+}
+#skill .container .skill-menu .skill-menu-sosmed a {
+  text-decoration: none;
+  margin-right: 0.4rem;
+  color: var(--text-color-alt);
+  transition: 0.2s;
+}
+#skill .container .skill-menu .skill-menu-sosmed a:hover {
+  color: var(--first-color-alt);
+}
+#skill .container .skill-content {
+  width: 70%;
+}
+#skill .container .skill-content .skill-content-desc {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+#skill .container .skill-content .skill-content-desc .skill-content-list {
+  width: 50%;
+  padding: 0 1rem;
+}
+#skill .container .skill-content .skill-content-desc .skill-content-list a {
+  background-color: var(--container-color);
+  display: block;
+  width: 100%;
+  padding: 1.4rem;
+  text-decoration: none;
+  color: var(--title-color);
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-size: var(--h6-font-size);
+  font-weight: 500;
+  transition: 0.3s;
+}
+#skill .container .skill-content .skill-content-desc .skill-content-list a:hover {
+  background-color: var(--first-color-alt);
+  color: var(--container-color);
+}
+#skill .container .skill-content .skill-content-desc .skill-content-list .skill-content-list-icon {
+  margin-right: 0.5rem;
+}
+#skill .container .skill-content .skill-content-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+#skill .container .skill-content .skill-content-nav a {
+  background-color: var(--container-color);
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.3rem;
+  color: var(--text-color);
+  transition: 0.3s;
+  font-size: var(--small-font-size);
+  font-weight: 600;
+}
+#skill .container .skill-content .skill-content-nav a:hover {
+  background-color: var(--first-color-alt);
+  color: var(--container-color);
+}
+#skill
+  .container
+  .skill-content
+  .skill-content-nav
+  a
+  .skill-content-nav-icon-prev {
+  margin-right: 0.3rem;
+}
+#skill
+  .container
+  .skill-content
+  .skill-content-nav
+  a
+  .skill-content-nav-icon-next {
+  margin-left: 0.3rem;
+}
+/* end skill section */
 
 /* ==================================================================== */
 /* laptop mode */
@@ -347,4 +471,49 @@ body {
     width: 100%;
   }
   /* end about section */
+
+  /*  skill section */
+  #skill {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #skill .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 1.3rem 0;
+  }
+  #skill .container .skill-menu {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  #skill .container .skill-menu h2.skill-menu-title {
+    padding-left: 0;
+  }
+  #skill .container .skill-menu h2.skill-menu-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    bottom: 0;
+    height: 5px;
+    width: 70%;
+    background-color: var(--first-color);
+    border-radius: 2px;
+    transform: translate(-50%, 0);
+    padding-bottom: 0;
+  }
+  #skill .container .skill-content {
+    width: 100%;
+  }
+  #skill .container .skill-content .skill-content-desc .skill-content-list {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  /* end skill section */
 }
