@@ -8,6 +8,7 @@
 
   --title-color: hsl(var(--hue), 12%, 95%);
   --text-color: hsl(var(--hue), 12%, 75%);
+  --text-color-alt: hsl(var(--hue), 12%, 90%);
 
   --body-color: hsl(var(--hue), 40%, 8%);
   --container-color: hsl(var(--hue), 24%, 12%);
@@ -37,7 +38,7 @@ body {
   max-width: 80%;
   margin: 0 auto;
 }
-
+/* ==================================================================== */
 /* dekstop mode */
 /* home section */
 #home {
@@ -132,6 +133,106 @@ body {
 }
 /* end home section */
 
+/*  about section */
+#about {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about .container {
+  display: flex;
+  align-content: center;
+}
+#about .container .about-menu {
+  width: 30%;
+}
+#about .container .about-menu h2.about-menu-title {
+  color: var(--first-color);
+  font-size: var(--h2-font-size);
+  text-transform: capitalize;
+  position: relative;
+  font-family: "Nunito";
+  font-weight: 700;
+  margin-bottom: 1rem;
+  display: inline-block;
+  padding-left: 1rem;
+}
+#about .container .about-menu h2.about-menu-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 70%;
+  width: 5px;
+  background-color: var(--first-color);
+  border-radius: 2px;
+  transform: translate(0, -50%);
+}
+#about .container .about-menu p.about-menu-desc {
+  color: var(--text-color-alt);
+  font-size: var(--h6-font-size);
+  margin-bottom: 0.5rem;
+}
+#about .container .about-menu .about-menu-sosmed a {
+  text-decoration: none;
+  margin-right: 0.4rem;
+  color: var(--text-color-alt);
+  transition: 0.2s;
+}
+#about .container .about-menu .about-menu-sosmed a:hover {
+  color: var(--first-color-alt);
+}
+#about .container .about-content {
+  width: 70%;
+}
+#about .container .about-content .about-content-desc {
+  margin-bottom: 1rem;
+}
+#about .container .about-content .about-content-desc p {
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+  margin-bottom: 1rem;
+  text-indent: 0.5rem;
+}
+#about .container .about-content .about-content-nav {
+  display: flex;
+  justify-content: space-between;
+}
+#about .container .about-content .about-content-nav a {
+  background-color: var(--container-color);
+  text-decoration: none;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.3rem;
+  color: var(--text-color);
+  transition: 0.3s;
+  font-size: var(--small-font-size);
+  font-weight: 600;
+}
+#about .container .about-content .about-content-nav a:hover {
+  background-color: var(--first-color-alt);
+  color: var(--container-color);
+}
+#about
+  .container
+  .about-content
+  .about-content-nav
+  a
+  .about-content-nav-icon-prev {
+  margin-right: 0.3rem;
+}
+#about
+  .container
+  .about-content
+  .about-content-nav
+  a
+  .about-content-nav-icon-next {
+  margin-left: 0.3rem;
+}
+/* end about section */
+
+/* ==================================================================== */
 /* laptop mode */
 @media (max-width: 992px) {
   :root {
@@ -148,6 +249,7 @@ body {
   }
 }
 
+/* ==================================================================== */
 /* mobile & tablet mode */
 @media (max-width: 768px) {
   :root {
@@ -175,7 +277,7 @@ body {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    padding: 1.3rem  0;
+    padding: 1.3rem 0;
   }
   #home .container .home-profile {
     width: 100%;
@@ -204,4 +306,28 @@ body {
     transition: 0.3s;
   }
   /* end home section */
+
+  /*  about section */
+  #about {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #about .container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 1.3rem 0;
+  }
+  #about .container .about-menu {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  #about .container .about-content {
+    width: 100%;
+  }
+  /* end about section */
 }
