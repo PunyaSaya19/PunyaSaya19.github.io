@@ -815,7 +815,7 @@ body {
     padding: 1rem;
   }
   #portfolio-detail .portfolio-detail-img {
-    width: 100%;
+    width: 120%;
   }
   #portfolio-detail .portfolio-detail-content  {
     width: 100%;
@@ -824,4 +824,11 @@ body {
     font-size: var(--small-font-size);
   }
   /* end portfolio section */
+}
+
+/* mobile only */ 
+@media (max-width: 380px) {
+  #portfolio-detail .portfolio-detail-img {
+    width: 140%;
+  }
 }
