@@ -76,7 +76,16 @@ body {
 #home .container .home-profile p.home-profile-desc {
   font-size: var(--normal-font-size);
   color: var(--text-color);
-  margin-bottom: 0.3rem;
+  margin-bottom: 1.4rem;
+}
+#home .container .home-profile a.home-btn-dowload-cv {
+  font-family: 'Nunito';
+  background-color: var(--first-color);
+  padding: .5rem 1rem ;
+  text-decoration: none;
+  color: var(--container-color);
+  font-weight: 800;
+  border-radius: 0.5rem;
 }
 #home .container .home-menu {
   width: 60%;
@@ -825,6 +834,9 @@ body {
     text-align: center;
     padding-right: 0;
     margin-bottom: 1.3rem;
+  }
+  #home .container .home-profile p.home-profile-desc {
+    margin-bottom: 1rem;
   }
   #home .container .home-menu {
     width: 100%;
