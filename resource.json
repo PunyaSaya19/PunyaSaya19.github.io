@@ -7,7 +7,7 @@
       "img_folder" : "img/portfolio/sistem-parkir-lrv8/",
       "img_count" : 15,
       "img_main" : "main",
-      "deskripsi" : "<p>Sistem Parkir ini merupakan sebuah program yang di buat untuk melakukan perhitungan biaya parkir kendaraan per jam nya.Cocok buat belajar atau tugas, terutama untuk seseorang yang baru belajar framework LARAVEL.</p>",
+      "deskripsi" : "<p>Sistem Parkir ini merupakan sebuah program yang saya buat untuk latihan mengenai fromework laravel.</p>",
       "fitur" : "<ol><li>Multilevel Login(Admin, Petugas)</li><li>Informatif Dashboard (Sudah ada grafik pendapatan per bulan juga)</li><li>Fitur Admin : <ul><li>Kelola Data Jenis Kendaraan (CRUD)</li><li>Kelola Data Petugas (CRUD)</li><li>Menginput Data Parkir Masuk</li><li>Mengedit dan Menghapus data Parkir Masuk</li><li>Menginput Data Parkir Keluar</li><li>Menghapus data Parkir Keluar</li><li>Mencetak Laporan dalam bentuk PDF</li></ul></li><li>Fitur Petugas : <ul><li>Melihat List Jenis Kendaraan (CRUD)</li><li>Menginput Data Parkir Masuk</li><li>Mengedit dan Menghapus data Parkir Masuk</li><li>Menginput Data Parkir Keluar</li><li>Menghapus data Parkir Keluar</li></ul></li></ol>", 
       "teknologi" : [ "LARAVEL 8","Boostrap 4", "Template Stisla", "Sweetalert2", "Datatables"]
     },
@@ -37,7 +37,7 @@
       "img_folder" : "img/portfolio/toko-sembako/",
       "img_count" : 30,
       "img_main" : "main",
-      "deskripsi" : "<p>Aplikasi ini sangat cocok untuk anda yang memiliki sebuah toko atau ruko. Aplikasi ini dapat mempermudah dalam memangement toko anda tetepi aplikasi ini juga cocok untuk orang awam yang ingin mempelajari sebuah website.</p>",
+      "deskripsi" : "<p>Aplikasi ini saya buat untuk mengelola sebuah toko atau ruko. Aplikasi ini dapat mempermudah dalam memangement toko dan telah digunakan oleh siter.my.id</p>",
       "fitur" : "<ol><li>Landing Page</li><li>Halaman Untuk menampikan list produk-produk</li><li>Multiuser (Owner dan kasir)</li><li>Informatif Dashboard yang di lengkapi dengan grafik ststistik penjualan dan produk terlaris</li><li>CRUD data kategori (Owner)</li><li>CRUD data user/kasir (Owner)</li><li>CRUD data produk (Owner, Kasir)</li><li>Tambahkan Diskon produk (Owner)</li><li>Tambah Stok Masuk (Owner)</li><li>Tambah Stok Keluar (Owner)</li><li>Tambah Transaksi (Owner, Kasir)</li><li>Lihat Data Transaksi (Owner, Kasir)</li><li>Lihat Detail Transaksi (Owner, Kasir)</li><li>Cetak Invoice Transaksi (Owner, Kasir)</li><li>Cetak Laporan penualan dan pembelian stok (Owner)</li><li>Edit Profile (Owner, Kasir)</li></ol>", 
       "teknologi" : [ "PHP NATIVE","Boostrap 5", "Template Mazer Admin", "toastify", "DOMPdf", "Datatables", "ChartJS"]
     },
