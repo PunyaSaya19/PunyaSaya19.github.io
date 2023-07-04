@@ -39,6 +39,29 @@ body {
   margin: 0 auto;
 }
 /* ==================================================================== */
+/* page loader */
+#page-loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: var(--body-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transition: .3s; */
+}
+#page-loader.page-loader-none {
+  display: none;
+}
+
+#page-loader h4 {
+  color: var(--title-color);
+  margin-bottom: .5rem;
+}
+
 /* dekstop mode */
 /* home section */
 #home {
@@ -1078,5 +1101,21 @@ body {
 @media (max-width: 380px) {
   #portfolio-detail .portfolio-detail-img {
     width: 140%;
+  }
+}
+
+.spinner {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: radial-gradient(farthest-side,var(--first-color-alt) 94%,#0000) top/9px 9px no-repeat,
+         conic-gradient(#0000 30%,var(--first-color-alt));
+  -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 9px),#000 0);
+  animation: spinner-c7wet2 1s infinite linear;
+}
+
+@keyframes spinner-c7wet2 {
+  100% {
+     transform: rotate(1turn);
   }
 }

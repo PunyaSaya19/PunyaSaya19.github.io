@@ -1,92 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rifan Hidayat | Portfolio</title>\
-  <!-- link fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <!-- link css -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  
-  <!-- portfolio page -->
-  <section id="portfolio">
-    <div class="container">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rifan Hidayat | Portfolio</title>
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- portfolio page -->
+    <section id="portfolio">
+      <div class="container">
         <div class="portfolio-menu">
-            <h2 class="portfolio-menu-title">Portfolio</h2>
-            <p class="portfolio-menu-desc">
-                Project-project yang pernah saya buat.
-            </p>
-            <div class="portfolio-menu-sosmed">
-                <a href="https://www.facebook.com/rifan.hidayat.1401933" target="_blank">
-                    <i class="fa-brands fa-facebook-f"></i>
-                </a>
-                <a href="https://api.whatsapp.com/send/?phone=6285643238608&text&type=phone_number&app_absent=0" target="_blank">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
-                <a href="https://github.com/PunyaSaya19" target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://t.me/punyasaya91" target="_blank">
-                    <i class="fa-brands fa-telegram"></i>
-                </a>
-            </div>
+          <h2 class="portfolio-menu-title">Portfolio</h2>
+          <p class="portfolio-menu-desc">
+            Project-project yang pernah saya buat.
+          </p>
+          <div class="portfolio-menu-sosmed">
+            <a
+              href="https://www.facebook.com/rifan.hidayat.1401933"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://api.whatsapp.com/send/?phone=6285643238608&text&type=phone_number&app_absent=0"
+              target="_blank"
+            >
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://github.com/PunyaSaya19" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://t.me/punyasaya91" target="_blank">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
         </div>
         <div class="portfolio-content">
-            <div class="portfolio-content-desc">
-                <div class="portfolio-content-list" data-id="PRJ001" onclick="displayPortfolioDetail('PRJ001')">
-                    <img src="img/project/example/1.png" alt="Portfolio Photo" srcset="" class="portfolio-content-list-img">
-                    <h4 class="portfolio-content-list-title">
-                        Project 1
-                    </h4>
-                    <div class="portfolio-content-list-layer">
-                        <i class="fas fa-plus"></i>
-                    </div>
-                </div>
+          <div class="portfolio-content-desc">
+            <div
+              class="portfolio-content-list"
+              data-id="PRJ001"
+              onclick="displayPortfolioDetail('PRJ001')"
+            >
+              <img
+                src="img/project/example/1.png"
+                alt="Portfolio Photo"
+                srcset=""
+                class="portfolio-content-list-img"
+              />
+              <h4 class="portfolio-content-list-title">Project 1</h4>
+              <div class="portfolio-content-list-layer">
+                <i class="fas fa-plus"></i>
+              </div>
             </div>
-            <div class="portfolio-content-nav">
-                <a href="skill.html" class="portfolio-content-nav-prev">
-                    <i class="fa-solid fa-angle-left portfolio-content-nav-icon-prev"></i> Skill
-                </a>
-                <a href="contact.html" class="portfolio-content-nav-next">
-                    Contact <i class="fa-solid fa-angle-right portfolio-content-nav-icon-next"></i>
-                </a>
-            </div>
+          </div>
+          <div class="portfolio-content-nav">
+            <a href="skill.html" class="portfolio-content-nav-prev">
+              <i
+                class="fa-solid fa-angle-left portfolio-content-nav-icon-prev"
+              ></i>
+              Skill
+            </a>
+            <a href="contact.html" class="portfolio-content-nav-next">
+              Contact
+              <i
+                class="fa-solid fa-angle-right portfolio-content-nav-icon-next"
+              ></i>
+            </a>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <div id="portfolio-detail">
+      <div id="portfolio-detail">
         <div class="portfolio-detail-img">
-            <div class="portfolio-detail-img-nav" id="portfolio-detail-img-nav-prev">
-                <i class="fa-solid fa-angle-left portfolio-detail-img-nav-icon-prev"></i>
-            </div>
-            <div>
-                <img src="img/project/laundry-native/main.png" alt="Image" class="portfolio-detail-img-list">
-            </div>
-            <div class="portfolio-detail-img-nav" id="portfolio-detail-img-nav-next">
-                <i class="fa-solid fa-angle-right portfolio-detail-img-nav-icon-next"></i>
-            </div>
+          <div
+            class="portfolio-detail-img-nav"
+            id="portfolio-detail-img-nav-prev"
+          >
+            <i
+              class="fa-solid fa-angle-left portfolio-detail-img-nav-icon-prev"
+            ></i>
+          </div>
+          <div>
+            <img
+              src="img/project/laundry-native/main.png"
+              alt="Image"
+              class="portfolio-detail-img-list"
+            />
+          </div>
+          <div
+            class="portfolio-detail-img-nav"
+            id="portfolio-detail-img-nav-next"
+          >
+            <i
+              class="fa-solid fa-angle-right portfolio-detail-img-nav-icon-next"
+            ></i>
+          </div>
         </div>
         <div class="portfolio-detail-content">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla unde sed id nemo culpa magni, nostrum libero maiores in vel cupiditate rerum magnam possimus fugiat pariatur voluptatum! Officia, nostrum. At enim fugiat doloribus! Quisquam, dolores sunt ipsam beatae voluptatibus quidem atque porro vitae earum expedita accusantium dicta perspiciatis labore neque?
-            </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla unde
+            sed id nemo culpa magni, nostrum libero maiores in vel cupiditate
+            rerum magnam possimus fugiat pariatur voluptatum! Officia, nostrum.
+            At enim fugiat doloribus! Quisquam, dolores sunt ipsam beatae
+            voluptatibus quidem atque porro vitae earum expedita accusantium
+            dicta perspiciatis labore neque?
+          </p>
         </div>
         <div class="portfolio-detail-close" id="portfolio-detail-close">
-            <button type="button">
-                Close
-            </button>
+          <button type="button">Close</button>
         </div>
-    </div>
-  </section>
-  <!-- end portfolio page -->
+      </div>
+    </section>
+    <!-- end portfolio page -->
 
-  <!-- fontawesome script -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- script js -->
-  <script src="js/script.js"></script>
-</body>
+    <!-- Page Loader -->
+    <div id="page-loader" class="">
+      <h4>Tunggu Sebentar</h4>
+      <div class="spinner"></div>
+    </div>
+
+    <!-- fontawesome script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- script js -->
+    <script src="js/script.js"></script>
+  </body>
 </html>
