@@ -145,10 +145,12 @@ body {
 /*  about section */
 #about {
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 5rem 0;
+
 }
 #about .container {
   display: flex;
@@ -199,12 +201,28 @@ body {
 #about .container .about-content .about-content-desc {
   margin-bottom: 1rem;
   padding: 0 1rem;
+  color: var(--text-color);
 }
 #about .container .about-content .about-content-desc p {
   color: var(--text-color);
   font-size: var(--normal-font-size);
   margin-bottom: 1rem;
-  text-indent: 0.5rem;
+  /* text-indent: 0.5rem; */
+}
+#about .container .about-content .about-content-desc h3 {
+  margin-bottom: .5rem;
+  color: var(--first-color-alt);
+}
+#about .container .about-content .about-content-desc .about-content-desc-job small {
+  color: var(--title-color);
+}
+#about .container .about-content .about-content-desc .about-content-desc-job h6 {
+  font-size: var(--h6-font-size);
+
+}
+#about .container .about-content .about-content-desc .about-content-desc-job p {
+  font-size: var(--normal-font-size);
+
 }
 #about .container .about-content .about-content-nav {
   display: flex;
